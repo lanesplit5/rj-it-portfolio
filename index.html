@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RJ Barnes | IT Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <a class="logo" href="#home">RJ Barnes</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#skills">Skills</a>
+        <a href="#strategy">Strategy</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">IT Portfolio</p>
+        <h1>RJ Barnes</h1>
+        <p class="hero-text">
+          Information Systems student building practical websites, dashboards, and data projects.
+        </p>
+        <div class="hero-buttons">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-screen">
+          <div class="line orange"></div>
+          <div class="line blue"></div>
+          <div class="line short"></div>
+          <div class="metric-row">
+            <div><span>Web</span><strong>Design</strong></div>
+            <div><span>Data</span><strong>Dashboards</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about-grid">
+      <div>
+        <p class="section-label">About Me</p>
+        <h2>Student, builder, and problem solver.</h2>
+      </div>
+      <div>
+        <p>
+          I am a second-year Information Systems student at Morgan State University. I focus on building simple, user-centered technology that improves organization and usability.
+        </p>
+        <p>
+          I enjoy creating projects that turn ideas into real solutions, whether that is designing websites, building dashboards, or organizing data in a way that is easy to understand. I approach every project with a focus on clarity, structure, and real-world use.
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <p class="section-label">Projects</p>
+      <h2>Project Highlights</h2>
+      <p class="section-intro">Each project includes a working visual and a breakdown of purpose, audience, front end, and back end thinking.</p>
+
+      <div class="project-grid">
+        <article class="project-card wide">
+          <div class="project-visual iframe-wrap">
+            <iframe src="cyber-site.html" title="Cybersecurity Awareness Website"></iframe>
+          </div>
+          <div class="project-body">
+            <h3>Cybersecurity Awareness Website</h3>
+            <p>
+              This is a working mini website created to teach users how to protect their personal information online. It explains common risks in a clear way so everyday users can understand what to avoid.
+            </p>
+            <ul>
+              <li><strong>Purpose:</strong> Help users recognize threats like phishing, weak passwords, and unsafe public WiFi.</li>
+              <li><strong>Audience:</strong> Students and general internet users.</li>
+              <li><strong>Front end:</strong> Landing section, threat cards, safety tips, and clean navigation.</li>
+              <li><strong>Back end thinking:</strong> Organized content structure that makes information easy to scan and use.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card wide">
+          <div class="project-visual chart-card">
+            <canvas id="excelChart"></canvas>
+          </div>
+          <div class="project-body">
+            <h3>Excel Dashboard System</h3>
+            <p>
+              This visual represents an Excel dashboard system used to organize data, track activity, and show performance trends. The goal is to make information easier to understand without forcing users to sort through raw data.
+            </p>
+            <ul>
+              <li><strong>Purpose:</strong> Track totals, compare months, and summarize performance.</li>
+              <li><strong>Audience:</strong> Supervisors, team leads, and staff members.</li>
+              <li><strong>Front end:</strong> Charts, KPI cards, and summary visuals.</li>
+              <li><strong>Back end thinking:</strong> Excel formulas, structured data tables, and clean categories.</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card wide">
+          <div class="project-visual python-visual">
+            <div class="terminal">
+              <div class="terminal-dots"><span></span><span></span><span></span></div>
+              <p>&gt; Guess a number from 1 to 100</p>
+              <p>&gt; Your guess: 50</p>
+              <p>&gt; Too low. Try again.</p>
+              <p>&gt; Your guess: 75</p>
+              <p>&gt; Correct in 4 tries.</p>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3>Python Number Guessing Game</h3>
+            <p>
+              This Python project uses logic, random number generation, and user input to create a simple interactive game. It helped me practice core programming concepts in a clear and hands-on way.
+            </p>
+            <ul>
+              <li><strong>Purpose:</strong> Practice programming logic and user feedback.</li>
+              <li><strong>Audience:</strong> Beginner programmers and students.</li>
+              <li><strong>Front end:</strong> Command line prompts and responses.</li>
+              <li><strong>Back end:</strong> Loops, conditions, input validation, and random number generation.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="dashboard" class="section dashboard-section">
+      <div class="dashboard-copy">
+        <p class="section-label">Interactive Dashboard</p>
+        <h2>Tableau Style Sales Dashboard</h2>
+        <p>
+          This dashboard uses working dropdown menus for year, region, and category. When the filters change, the KPI cards and chart update to show a different view of the data.
+        </p>
+        <ul>
+          <li>Three years: 2023, 2024, and 2025</li>
+          <li>Three regions: East, West, and Central</li>
+          <li>Three categories: Technology, Office Supplies, and Furniture</li>
+        </ul>
+      </div>
+
+      <div class="tableau-dashboard">
+        <div class="dashboard-top">
+          <h3>Sales Overview</h3>
+          <select id="yearFilter">
+            <option value="2023">2023</option>
+            <option value="2024" selected>2024</option>
+            <option value="2025">2025</option>
+          </select>
+          <select id="regionFilter">
+            <option value="East" selected>East</option>
+            <option value="West">West</option>
+            <option value="Central">Central</option>
+          </select>
+          <select id="categoryFilter">
+            <option value="Technology" selected>Technology</option>
+            <option value="Office Supplies">Office Supplies</option>
+            <option value="Furniture">Furniture</option>
+          </select>
+        </div>
+
+        <div class="kpi-grid">
+          <div class="kpi"><span>Total Sales</span><strong id="salesKpi">$0</strong></div>
+          <div class="kpi"><span>Total Profit</span><strong id="profitKpi">$0</strong></div>
+          <div class="kpi"><span>Total Orders</span><strong id="ordersKpi">0</strong></div>
+          <div class="kpi"><span>Profit Margin</span><strong id="marginKpi">0%</strong></div>
+        </div>
+
+        <div class="chart-grid">
+          <div class="chart line-chart">
+            <h4>Monthly Sales Trend</h4>
+            <canvas id="tableauChart"></canvas>
+          </div>
+          <div class="chart insight-card">
+            <h4>Dashboard Insight</h4>
+            <p id="insightText"></p>
+          </div>
+          <div class="chart region-card">
+            <h4>Region View</h4>
+            <div class="map-shape"></div>
+            <p id="regionText"></p>
+          </div>
+          <div class="chart category-card">
+            <h4>Category Performance</h4>
+            <div class="progress-wrap">
+              <span id="progressOne"></span>
+              <span id="progressTwo"></span>
+              <span id="progressThree"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section split-section">
+      <div class="panel">
+        <p class="section-label">Skills</p>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+          <span>Python</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Tableau</span>
+          <span>Microsoft Excel</span>
+          <span>Web Design</span>
+          <span>IT Fundamentals</span>
+          <span>Problem Solving</span>
+        </div>
+      </div>
+
+      <div id="strategy" class="panel strategy-panel">
+        <p class="section-label">Social Media Strategy</p>
+        <h2>Building a stronger online presence.</h2>
+        <p>
+          Using ideas from Forbes' <em>Social Media Marketing: The Ultimate Guide</em>, I would build a social media presence by setting clear goals, understanding the target audience, creating useful content, staying consistent, engaging with the community, and measuring performance.
+        </p>
+        <ul>
+          <li>Define goals such as awareness, engagement, and conversions.</li>
+          <li>Understand the audience and the platforms they use most.</li>
+          <li>Create content that informs, connects, and supports the brand.</li>
+          <li>Track results and adjust based on what performs best.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div>
+        <p class="section-label">Contact</p>
+        <h2>Let’s connect.</h2>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:chkbackdoor@proton.me">chkbackdoor@proton.me</a>
+        <a href="https://www.linkedin.com/in/rj-barnes5/" target="_blank" rel="noopener">LinkedIn.com/in/rj-barnes5/</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 RJ Barnes. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
